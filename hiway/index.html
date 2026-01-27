@@ -69,6 +69,37 @@
       /* 文字居中对齐 */
     }
 
+    /* 添加网格布局样式 */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .grid-cell {
+      text-align: center;
+    }
+
+    .grid-cell video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .grid-cell .method-label {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #363636;
+    }
+
+    .grid-cell .case-label {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #4a4a4a;
+    }
+
     .text-image-container {
       display: flex;
       /* 使用弹性盒模型布局 */
@@ -102,7 +133,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <!-- <span class="author-block"><a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Jiazhao Zhang</a><sup>1,2,*</sup>,</span> -->
-              <span class="author-block">
+              <!-- <span class="author-block">
                 <a href="https://jzhzhang.github.io/">Jiazhao
                   Zhang</a><sup>1,2,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Kunyu Wang<sup>2,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -110,19 +141,19 @@
                   Xu</a><sup>2,3,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://github.com/GengzeZhou">Gengze Zhou</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://yiconghong.me/">Yicong Hong</a><sup>5</sup>
-              </span>
-              <span class="author-block" style="display: block;">
+              </span> -->
+              <!-- <span class="author-block" style="display: block;">
                 Xiaomeng Fang<sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="http://qi-wu.me/">Qi Wu</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ">Zhizheng
                   Zhang</a><sup>6,†</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://hughw19.github.io/">He Wang</a><sup>1,2,†</sup>
-              </span>
+              </span> -->
             </div>
 
             <div class="is-size-5 publication-authors">
               <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
-              <span class="author-block"><sup>1</sup>
+              <!-- <span class="author-block"><sup>1</sup>
                 Peking University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <sup>2</sup>Beijing Academy of Artificial Intelligence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <sup>3</sup>CASIA
@@ -135,7 +166,7 @@
               <span class="eql-cntrb" style="display: block;">
                 <small><sup>*</sup>Indicates Equal Contribution,&nbsp;</small>
                 <small><sup>†</sup>Indicates Equal Advising.</small>
-              </span>
+              </span> -->
             </div>
 
 
@@ -145,8 +176,7 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2402.15852.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -156,8 +186,7 @@
 
                 <!-- Supplementary PDF link -->
                 <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=IHkDuJZV0I8" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-video"></i>
                     </span>
@@ -167,12 +196,22 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/jzhzhang/NaVid-VLN-CE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Hugging Face link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/zzywhu/VLN_Waypoint/tree/main" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-rocket"></i>
+                    </span>
+                    <span>Hugging Face</span>
                   </a>
                 </span>
 
@@ -190,7 +229,7 @@
             </div>
 
             <div class="text">
-              Robotics: Science and Systems (RSS 2024)
+              European Conference on Computer Vision (ECCV 2026)
             </div>
 
           </div>
@@ -222,16 +261,12 @@
 
         <!-- <p> <b>Real-world demos by following simple instructions, such as walking to a single landmark.</b></p> -->
         <ul>
-          <li><b>NaVid is the first video-based Vision-Language Model (VLM) for the task of vision-and-language
-              navigation (VLN).</b></li>
-          <li><b>NaVid navigates in a human-like manner, requiring solely an on-the-fly video stream from a monocular
-              camera as input, without the need for maps, odometers, or depth inputs.</b></li>
-          <li><b>NaVid incorporates 510K VLN video sequences from simulation environments and 763K real-world caption
-              samples to achieve cross-scene generalization.</b></li>
+          <li><b></b></li>
+          <li><b></b></li>
+          <li><b></b></li>
           <!-- <li><b>NaVid is co-trained with real-world caption data (763k) and simulated VLN data (510k). The VLN capability is obtained by leveraging simulation environments, while real-world understanding is gained through real-world caption data.
           </b></li> -->
-          <li><b>NaVid achieves state-of-the-art (SOTA) performance in both simulated and real-world environments, and
-              exhibits strong generalizability on unseen scenarios.</b></li>
+          <li><b></b></li>
         </ul>
 
 
@@ -243,76 +278,31 @@
 
 
 
-
-
-
-
-  <!-- Teaser video 1 -->
-  <section class="hero is-small">
-
-    <div class="hero-body">
-      <div class="container is-max-desktop has-text-centered">
-
-
-
-
-        <h2 class="title is-3">Sim-to-Real Demos: Simple Instruction VLN</h2>
-        <p> <b>In these demos, the agent navigates following relatively simple instructions, such as walking to a single
-            landmark. NaVid demonstrates the ability to accurately distinguish differences in similar instructions and
-            accordingly complete precise navigation behaviors.</b></p>
-        <!-- <p> <b>Real-world demos by following simple instructions, such as walking to a single landmark.</b></p> -->
-
-        <div id="results-carousel-teaser1" class="carousel results-carousel">
-
-
-
-
-
-          <div class="item item-video7">
-            <video poster="" id="video7" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/teaser/simple_instruction_1_compressed.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video8">
-            <video poster="" id="video8" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/teaser/simple_instruction_2_compressed.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video9">
-            <video poster="" id="video9" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/teaser/simple_instruction_3_compressed.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End teaser video 1 -->
-
   <!-- Teaser video 2 -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
-        <h2 class="title is-3">Sim-to-Real Demos: Complex Instruction VLN</h2>
-        <p> <b>In these demos, the agent navigates according to complex instructions composed of multiple simple
-            instructions in sequence. NaVid can accurately execute them in the correct order.</b></p>
+        <h2 class="title is-3">Realworld Demos</h2>
+        <p> <b>In these demos, the agent navigates following the same instruction "turn around and go straight forward
+            to the blue box" in different scenarios (outdoor and indoor). The third demo shows the agent executing a
+            sequential instruction: "go straight to the blue box and then turn right to exit the room", demonstrating
+            the capability to accurately execute complex instructions in the correct order.</b></p>
         <!-- <p> <b>Real-world demos by following complex instructions, which consist of several simple instructions.</b></p> -->
 
         <div id="results-carousel-teaser2" class="carousel results-carousel">
           <div class="item item-video10">
             <video poster="" id="video10" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/teaser/complex_instruction_1_compressed.mp4" type="video/mp4">
+              <source src="static/videos/ours.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-video11">
             <video poster="" id="video11" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/teaser/complex_instruction_2_compressed.mp4" type="video/mp4">
+              <source src="static/videos/没看见蓝箱子(ours).mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-video12">
             <video poster="" id="video12" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/teaser/complex_instruction_3_compressed.mp4" type="video/mp4">
+              <source src="static/videos/出门(ours).mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -359,31 +349,6 @@
   <!-- YouTube Video-->
 
 
-
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <div class="content">
-              <h2 class="title is-3">Summary Video</h2>
-              <div class="publication-video">
-                <!---TODO Dhruv: put video link here-->
-                <iframe src="https://www.youtube.com/embed/IHkDuJZV0I8?rel=0&amp;showinfo=0" frameborder="0"
-                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
   <!-- Method Overview -->
   <section class="hero is-small">
     <div class="hero-body">
@@ -392,18 +357,17 @@
           <div class="column is-four-fifths">
             <div class="content">
               <h2 class="title is-3">Method Overview</h2>
-              <img src="static/images/method.png" alt="NaVid" class="center-image blend-img-background">
+              <img src="static/images/framework.png" alt="NaVid" class="center-image blend-img-background">
               <div class="level-set has-text-justified">
                 <p class="has-text-justified">
-                  <b>The overview of NaVid.</b> The inputs of NaVid consist of the RGB frames from the online video
-                  observation {x<sub>0</sub>, · · · , x<sub>t</sub>} along with the human instruction I. For each frame,
-                  we use an observation encoder to extract the visual information with the instruction to obtain
-                  observation tokens, including, instruction-queried tokens (orange blocks) and instruction-agnostic
-                  tokens (blue blocks). At the current step t, the history frames and current frame x<sub>t</sub> are
-                  encoded as observation tokens, with 4 and 64 instruction-agnostic tokens for history frames and
-                  current frames, respectively. Besides, our method obtains language tokens by a text encoder. Finally,
-                  split by the special tokens [HIS], [OBS], and [NAV], we concatenate the observation tokens and
-                  language tokens and send the tokens to the Vicuna-7B then obtain the next-step action.
+                  <b>Pipeline of Hi-Way</b>. Our hierarchical framework decomposes
+                  the complex VLN task into three controllable modules. (1) <i>High-level
+                    planning</i>: an LLM-driven planner decomposes the instruction into an ordered sequence
+                  of sub-tasks. (2) <i>Middle-level perception and waypoint reasoning</i>:
+                  the robot acquires a surround view via in-place rotation, performs image-text
+                  matching to build a interest obstacle map, and selects the optimal waypoint to
+                  refine the route. (3) <i>Low-level action execution</i>: a ROS-aligned
+                  controller executes waypoint navigation through velocity commands (<i>/cmd_vel</i>).
                 </p>
               </div>
             </div>
@@ -419,12 +383,19 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <div class="content">
-              <h2 class="title is-3">Data Collection</h2>
-              <img src="static/images/data_collection.png" alt="NaVid" class="center-image blend-img-background">
+              <h2 class="title is-3">VLN-Waypoint Dataset Construction</h2>
+              <img src="static/images/dataset.png" alt="NaVid" class="center-image blend-img-background">
               <div class="level-set has-text-justified">
                 <p class="has-text-justified">
-                  <b>We co-train NaVid using real-world caption data (763k) and simulated VLN data (510k). The simulated
-                    VLN data consists of 500k action planning samples and 10k instruction reasoning samples.</b>
+                  <b>VLN-Waypoint dataset construction pipeline.</b> (a) Starting from
+                  classic VLN observations (RGB/depth) and multi-step action sequences. (b) An
+                  action-to-waypoint policy maps the next four actions to a discrete waypoint
+                  label (including special cases such as <i>stop</i>). (c) Using depth-based
+                  3D ground segmentation, we sample traversable waypoint candidates and project
+                  them into the image to obtain waypoint-annotated views. (d) We package each
+                  sample as an instruction-route pair with the current and history frames,
+                  together with the projected waypoint candidates, forming our VLN-Waypoint
+                  dataset.
                 </p>
                 <p class="has-text-justified">
                   <!-- <b>We initialize the encoders and Vicuna-7B using pre-trained weights, and our model requires only one epoch for the training process.</b> -->
@@ -466,99 +437,151 @@
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
         <h2 class="title is-3">Results of Navigation Video Captioning</h2>
-        <!-- <h2 class="title is-3">Caption Results Visualization</h2> -->
-        <p> <b>Given an egocentric RGB video, describe the trajectory using NaVid. </b></p>
+        <p> <b>Comparison between our method and NaVid on visible and non-visible cases. </b></p>
 
-        <div class="video-container">
-          <video autoplay playsinline controls muted loop>
-            <source src="./static/videos/real_video_caption/real_caption_1_compressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="description"><b>NaVid:</b> Walk forward and turn left. Wait by the first door on the left.</div>
-        </div>
+        <div class="comparison-grid">
+          <!-- Row 1, Column 1: Our Method - Visible Case -->
+          <div class="grid-cell">
+            <div class="method-label">Our Method (Hi-Way)</div>
+            <div class="case-label">Visible Case</div>
+            <img src="./static/gif/visible/our1.gif" alt="Hi-Way Visible Case">
+            <div class="description"><b>Hi-Way:</b> Walk forward and turn left. Wait by the first door on the left.
+            </div>
+          </div>
 
-        <div class="video-container">
-          <video autoplay playsinline controls muted loop>
-            <source src="./static/videos/real_video_caption/real_caption_2_compressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="description"><b>NaVid:</b> Walk forward and turn left. Wait near the first doorway.</div>
-        </div>
+          <!-- Row 1, Column 2: Our Method - Non-visible Case -->
+          <div class="grid-cell">
+            <div class="method-label">Our Method (Hi-Way)</div>
+            <div class="case-label">Non-visible Case</div>
+            <img src="./static/gif/visible/our2.gif" alt="Hi-Way Non-visible Case">
+            <div class="description"><b>Hi-Way:</b> Walk forward and turn left. Wait near the first doorway.</div>
+          </div>
 
-        <div class="video-container">
-          <video autoplay playsinline controls muted loop>
-            <source src="./static/videos/real_video_caption/real_caption_3_compressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="description"><b>NaVid:</b> Turn around and walk to the other side of the room. Wait by the chair
-            and table.</div>
+          <!-- Row 2, Column 1: NaVid - Visible Case -->
+          <div class="grid-cell">
+            <div class="method-label">NaVid</div>
+            <div class="case-label">Visible Case</div>
+            <img src="./static/gif/visible/navid1.gif" alt="NaVid Visible Case">
+            <div class="description"><b>NaVid:</b> Exit the bathroom. Turn left and enter the bedroom. Wait near the
+              bed.</div>
+          </div>
 
-
-        </div>
-
-        <div class="video-container">
-          <video autoplay playsinline controls muted loop>
-            <source src="./static/videos/sim_video_caption/sim_caption_1_compressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="description"><b>NaVid:</b> Exit the bathroom. Turn left and enter the bedroom. Wait near the bed.
+          <!-- Row 2, Column 2: NaVid - Non-visible Case -->
+          <div class="grid-cell">
+            <div class="method-label">NaVid</div>
+            <div class="case-label">Non-visible Case</div>
+            <img src="./static/gif/visible/navid2.gif" alt="NaVid Non-visible Case">
+            <div class="description"><b>NaVid:</b> Walk through the doorway and turn left. Walk past the pool and wait
+              by the first chair.</div>
           </div>
         </div>
 
-        <div class="video-container">
-          <video autoplay playsinline controls muted loop>
-            <source src="./static/videos/sim_video_caption/sim_caption_2_compressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="description"><b>NaVid:</b> Walk through the doorway and turn left. Walk past the pool and wait by
-            the first chair.</div>
-        </div>
-
-        <div class="video-container">
-          <video autoplay playsinline controls muted loop>
-            <source src="./static/videos/sim_video_caption/sim_caption_3_compressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="description"><b>NaVid:</b> Turn around and go into the hallway. Go into the room with the stairs
-            and turn right. Go into the room with the kitchen
-            and wait there.</div>
-
-
-        </div>
-
-
-
-
-
-        <!-- <div id="results-carousel-Caption" class="carousel results-carousel"> -->
-        <!-- <div class="item item-video1 video-container">
-
-          <div class="item item-video1">
-          <video poster="" id="video1" autoplay playsinline controls muted loop height="100%">
-            <source src="./static/videos/real_video_caption/real_1.mp4"
-            type="video/mp4">
-          </video>
-          <p >
-            ssssssssssssssssssssssssssssssssssssssss
-          </p>
-
-        </div>
-
-
-
-          <video poster="" id="video2" autoplay playsinline controls muted loop height="100%">
-            <source src="./static/videos/real_video_caption/real_2.mp4"
-            type="video/mp4">
-          </video>
-
-          <video poster="" id="video3" autoplay playsinline controls muted loop height="100%">
-            <source src="./static/videos/real_video_caption/real_7.mp4"
-            type="video/mp4">
-          </video>
-
-    </div> -->
       </div>
+    </div>
   </section>
+
+
+  <!-- Comparison Section: Single-task vs Multiple-task -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h2 class="title is-3">Single-task vs Multiple-task Comparison</h2>
+        <p><b>Comparison of different methods on single-task and multiple-task navigation scenarios.</b></p>
+
+        <style>
+          .comparison-grid-3col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+          }
+
+          .comparison-grid-3col .grid-cell {
+            text-align: center;
+          }
+
+          .comparison-grid-3col .grid-cell img {
+            width: 100%;
+            border-radius: 8px;
+          }
+
+          .comparison-grid-3col .method-label {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #363636;
+          }
+
+          .comparison-grid-3col .task-label {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #4a4a4a;
+          }
+
+          .comparison-grid-3col .description {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+          }
+        </style>
+
+        <div class="comparison-grid-3col">
+          <!-- Row 1: Single-task -->
+          <!-- Column 1: Our Method - Single-task -->
+          <div class="grid-cell">
+            <div class="method-label">Our Method (Hi-Way)</div>
+            <div class="task-label">Single-task</div>
+            <img src="./static/gif/goal/our1.gif" alt="Hi-Way Single-task">
+            <div class="description"><b>Hi-Way:</b> Turn left and walk to the chair.</div>
+          </div>
+
+          <!-- Column 2: NaVid - Single-task -->
+          <div class="grid-cell">
+            <div class="method-label">NaVid</div>
+            <div class="task-label">Single-task</div>
+            <img src="./static/gif/goal/navid1.gif" alt="NaVid Single-task">
+            <div class="description"><b>NaVid:</b> Turn left and walk to the chair.</div>
+          </div>
+
+          <!-- Column 3: Uni-NaVid - Single-task -->
+          <div class="grid-cell">
+            <div class="method-label">Uni-NaVid</div>
+            <div class="task-label">Single-task</div>
+            <img src="./static/gif/goal/uni1.gif" alt="Uni-NaVid Single-task">
+            <div class="description"><b>Uni-NaVid:</b> Turn left and walk to the chair.</div>
+          </div>
+
+          <!-- Row 2: Multiple-task -->
+          <!-- Column 1: Our Method - Multiple-task -->
+          <div class="grid-cell">
+            <div class="method-label">Our Method (Hi-Way)</div>
+            <div class="task-label">Multiple-task</div>
+            <img src="./static/gif/goal/our2.gif" alt="Hi-Way Multiple-task">
+            <div class="description"><b>Hi-Way:</b> Exit the room, turn right, and walk to the kitchen table.</div>
+          </div>
+
+          <!-- Column 2: NaVid - Multiple-task -->
+          <div class="grid-cell">
+            <div class="method-label">NaVid</div>
+            <div class="task-label">Multiple-task</div>
+            <img src="./static/gif/goal/navid2.gif" alt="NaVid Multiple-task">
+            <div class="description"><b>NaVid:</b> Exit the room, turn right, and walk to the kitchen table.</div>
+          </div>
+
+          <!-- Column 3: Uni-NaVid - Multiple-task -->
+          <div class="grid-cell">
+            <div class="method-label">Uni-NaVid</div>
+            <div class="task-label">Multiple-task</div>
+            <img src="./static/gif/goal/uni2.gif" alt="Uni-NaVid Multiple-task">
+            <div class="description"><b>Uni-NaVid:</b> Exit the room, turn right, and walk to the kitchen table.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Comparison Section -->
   <!-- End Video carousel 1 Caption -->
 
   <!-- Image carousel 2 R2R -->
@@ -582,124 +605,14 @@
   <!-- End image carousel 2 R2R -->
 
 
-  <!-- End video carousel R2R -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container is-max-desktop has-text-centered">
-        <h2 class="title is-3">Cross-scene Generalization Results on R2R</h2>
-        <h3 class="title is-5">(R2R training split -> R2R validation unseen split)</h2>
-          <div id="results-carousel-teaser1" class="carousel results-carousel">
 
-
-
-
-
-            <div class="item item-video10">
-              <video poster="" id="video10" autoplay playsinline controls muted height="100%">
-                <source src="static/gif/r2r_visual/r_r2r_1.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video11">
-              <video poster="" id="video11" autoplay playsinline controls muted height="100%">
-                <source src="static/gif/r2r_visual/r_r2r_2.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video12">
-              <video poster="" id="video12" autoplay playsinline controls muted height="100%">
-                <source src="static/gif/r2r_visual/r_r2r_3.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video13">
-              <video poster="" id="video13" autoplay playsinline controls muted height="100%">
-                <source src="static/gif/r2r_visual/r_r2r_4.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video14">
-              <video poster="" id="video14" autoplay playsinline controls muted height="100%">
-                <source src="static/gif/r2r_visual/r_r2r_5.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video15">
-              <video poster="" id="video15" autoplay playsinline controls muted height="100%">
-                <source src="static/gif/r2r_visual/r_r2r_6.mp4" type="video/mp4">
-              </video>
-            </div>
-
-
-
-          </div>
-
-
-
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Image carousel 3 RxR -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container is-max-desktop has-text-centered">
-        <h2 class="title is-3"> Cross-scene Generalization Results from R2R to RxR</h2>
-        <h2 class="title is-5"> (R2R training split -> RxR validation unseen split )</h2>
-        <div id="results-carousel-teaser1" class="carousel results-carousel">
-
-
-
-
-
-          <div class="item item-video16">
-            <video poster="" id="video16" autoplay playsinline controls muted height="100%">
-              <source src="static/gif/rxr_visual/r_rxr_1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video17">
-            <video poster="" id="video17" autoplay playsinline controls muted height="100%">
-              <source src="static/gif/rxr_visual/r_rxr_2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video18">
-            <video poster="" id="video18" autoplay playsinline controls muted height="100%">
-              <source src="static/gif/rxr_visual/r_rxr_3.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video19">
-            <video poster="" id="video19" autoplay playsinline controls muted height="100%">
-              <source src="static/gif/rxr_visual/r_rxr_4.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video20">
-            <video poster="" id="video20" autoplay playsinline controls muted height="100%">
-              <source src="static/gif/rxr_visual/r_rxr_5.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video21">
-            <video poster="" id="video21" autoplay playsinline controls muted height="100%">
-              <source src="static/gif/rxr_visual/r_rxr_6.mp4" type="video/mp4">
-            </video>
-          </div>
-
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End image carousel 3 RxR -->
 
 
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{zhang2024navid,
-        title={NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation},
-        author={Zhang, Jiazhao and Wang, Kunyu and Xu, Rongtao and Zhou, Gengze and Hong, Yicong and Fang, Xiaomeng and Wu, Qi and Zhang, Zhizheng and Wang, He},
-        journal={Robotics: Science and Systems},
-        year={2024}
-      }</code></pre>
+      <pre><code></code></pre>
     </div>
   </section>
   <!--End BibTex citation -->
