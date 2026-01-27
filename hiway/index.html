@@ -283,32 +283,37 @@
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
         <h2 class="title is-3">Realworld Demos</h2>
-        <p> <b>In these demos, the agent navigates following the same instruction "turn around and go straight forward
-            to the blue box" in different scenarios (outdoor and indoor). The third demo shows the agent executing a
-            sequential instruction: "go straight to the blue box and then turn right to exit the room", demonstrating
-            the capability to accurately execute complex instructions in the correct order.</b></p>
-        <!-- <p> <b>Real-world demos by following complex instructions, which consist of several simple instructions.</b></p> -->
+        <p style="margin-bottom: 16px;">
+          <b>These demos show the agent following simple navigation instructions in outdoor and indoor scenarios, with
+            the last example executing a short multi-step command.</b>
+        </p>
 
-        <div id="results-carousel-teaser2" class="carousel results-carousel">
-          <div class="item item-video10">
-            <video poster="" id="video10" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/ours.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video11">
-            <video poster="" id="video11" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/没看见蓝箱子(ours).mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video12">
-            <video poster="" id="video12" autoplay playsinline controls muted loop height="100%">
-              <source src="static/videos/出门(ours).mp4" type="video/mp4">
-            </video>
-          </div>
+        <div class="demo-block">
+          <p class="has-text-centered" style="margin-bottom: 8px;">
+            <b>Instruction:</b> Turn around and go straight forward to the blue box.
+          </p>
+          <video poster="" id="video10" autoplay playsinline controls muted loop height="100%">
+            <source src="static/videos/ours.mp4" type="video/mp4">
+          </video>
         </div>
-        <!-- <h2 class="subtitle has-text-centered">
-       Real-world demo of our proposed video-based VLM, NaVid, for vision-and-language navigation. Given the human instruction, NaVid only takes online RGB video frames as input and outputs a language action for robotic execution.
-     </h2> -->
+
+        <div class="demo-block">
+          <p class="has-text-centered" style="margin-bottom: 8px;">
+            <b>Instruction:</b> Turn around and go straight forward to the blue box.
+          </p>
+          <video poster="" id="video11" autoplay playsinline controls muted loop height="100%">
+            <source src="static/videos/没看见蓝箱子(ours).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="demo-block">
+          <p class="has-text-centered" style="margin-bottom: 8px;">
+            <b>Instruction:</b> Go straight to the blue box and then turn right to exit the room.
+          </p>
+          <video poster="" id="video12" autoplay playsinline controls muted loop height="100%">
+            <source src="static/videos/出门(ours).mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
   </section>
