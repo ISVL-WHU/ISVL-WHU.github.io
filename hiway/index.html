@@ -611,9 +611,16 @@
             text-align: center;
           }
 
+          /* Make both videos the same visual size */
           .two-video-item video {
             width: 100%;
+            aspect-ratio: 16 / 9;
+            /* same ratio for both */
+            height: auto;
+            object-fit: cover;
+            /* fill container even if source ratios differ */
             border-radius: 8px;
+            background: #000;
           }
 
           .two-video-caption {
