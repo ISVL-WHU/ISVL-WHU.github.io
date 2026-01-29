@@ -7,7 +7,7 @@
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION META TAG TAG" />
   <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -117,6 +117,44 @@
       list-style-type: circle;
       /* 使用圆形作为项目符号 */
 
+    }
+
+    /* Add space between stacked demo videos */
+    .demo-block+.demo-block {
+      margin-top: 20px;
+    }
+  </style>
+
+  <style>
+    .two-video-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 24px;
+      /* horizontal space between videos */
+      row-gap: 16px;
+      /* vertical gap if wrapping occurs */
+      align-items: start;
+      margin-top: 10px;
+    }
+
+    .two-video-item {
+      text-align: center;
+    }
+
+    .two-video-item video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #000;
+      display: block;
+    }
+
+    .two-video-caption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #4a4a4a;
     }
   </style>
 
@@ -435,6 +473,63 @@
   </div>
 </section> -->
   <!-- End image carousel Caption  -->
+
+
+  <!-- Habitat Inference Demos -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h2 class="title is-3">Habitat Model Inference Demos</h2>
+        <p style="margin-bottom: 16px;">
+          <b>These GIFs showcase our model inference demos on the Habitat simulator.</b>
+        </p>
+
+        <style>
+          .habitat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 columns */
+            gap: 16px;
+            /* space between GIFs */
+            margin-top: 10px;
+            align-items: start;
+          }
+
+          .habitat-cell {
+            text-align: center;
+          }
+
+          .habitat-cell img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            /* uniform tile size */
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+            background: #000;
+          }
+
+          @media (max-width: 600px) {
+            .habitat-grid {
+              grid-template-columns: 1fr;
+            }
+
+            /* stack on small screens */
+          }
+        </style>
+
+        <div class="habitat-grid">
+          <div class="habitat-cell"><img src="static/gif/habitat/364.gif" alt="Habitat Demo 1"></div>
+          <div class="habitat-cell"><img src="static/gif/habitat/1110.gif" alt="Habitat Demo 2"></div>
+          <div class="habitat-cell"><img src="static/gif/habitat/1462.gif" alt="Habitat Demo 3"></div>
+          <div class="habitat-cell"><img src="static/gif/habitat/1544.gif" alt="Habitat Demo 4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
   <!-- Video carousel 1 Caption -->
   <section class="hero is-small">
