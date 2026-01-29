@@ -488,9 +488,7 @@
           .habitat-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            /* 2 columns */
             gap: 16px;
-            /* space between GIFs */
             margin-top: 10px;
             align-items: start;
           }
@@ -499,25 +497,22 @@
             text-align: center;
           }
 
+          /* Show GIFs completely (no cropping) */
           .habitat-cell img {
             width: 100%;
-            aspect-ratio: 16 / 9;
-            /* uniform tile size */
-            object-fit: cover;
+            height: auto;
+            /* keep natural aspect ratio */
             border-radius: 6px;
             display: block;
-            background: #000;
+            /* removed aspect-ratio and object-fit: cover */
           }
 
           @media (max-width: 600px) {
             .habitat-grid {
               grid-template-columns: 1fr;
             }
-
-            /* stack on small screens */
           }
         </style>
-
         <div class="habitat-grid">
           <div class="habitat-cell"><img src="static/gif/habitat/364.gif" alt="Habitat Demo 1"></div>
           <div class="habitat-cell"><img src="static/gif/habitat/1110.gif" alt="Habitat Demo 2"></div>
@@ -535,7 +530,7 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
-        <h2 class="title is-3">Results of Navigation Video Captioning</h2>
+        <h2 class="title is-3">Comparative Experiments in Real Wrold</h2>
         <p> <b>Comparison between our method and NaVid on visible and non-visible cases. </b></p>
 
         <div class="comparison-grid">
